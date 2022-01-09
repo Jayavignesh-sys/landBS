@@ -1,0 +1,84 @@
+.popup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.popup-inner {
+  width: 90%;
+  height: 95%;
+  left: 25;
+  padding: 15px;
+  background-color: rgb(183, 226, 252);
+  animation: moveRight 0.5s;
+  animation-direction: normal;
+  border-radius: 25px;
+  overflow: auto;
+}
+
+.popup-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left-stack {
+  width: 40%;
+  height: 100%;
+}
+
+.right-stack {
+  padding-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.citem {
+  width: 50%;
+}
+
+.citemp {
+  padding-top: 100px;
+  width: 100%;
+}
+
+.right-det {
+  background-color: blanchedalmond;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.Carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.Carousel-stack {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

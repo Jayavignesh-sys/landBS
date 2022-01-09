@@ -1,0 +1,113 @@
+.App > * {
+  // flex: 1 100%;
+}
+
+.frame{
+  width: 80%;
+  height: 50rem;
+  outline-style: dotted;
+  margin-left: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.drop{
+  margin: 2em;
+  animation: moveDown 0.2s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  outline: 5px;
+  outline-style: solid;
+  border-radius: 3px;
+  outline-color: rgb(27, 25, 25);
+}
+
+.items{ 
+  animation: moveDown 0.2s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  background-color: black;
+}
+
+.drop-rev{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: moveDown 0.2s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+  background-color: black;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.header {
+  background-color: rgb(247, 175, 175);
+  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  color: rgb(43, 43, 43);
+}
+
+.form:hover {
+  color: rgb(43, 43, 43);
+}
+
+.title {
+  flex: 1;
+  background-color: rgb(198, 246, 248);
+}
+
+.search {
+  flex: 4;
+  background-color: deepskyblue;
+}
+
+.account {
+  flex: 1;
+  background-color: skyblue;
+}
+
+// .body {
+//   display: flex;
+//   height: 100vh;
+// }
+.card-stack {
+  margin: 3em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body{
+  margin: 6em;
+}
+
+.card-items:hover {
+  background-color: #525050;
+}
+
+.card-items{
+  margin: 2em;
+}
+
+.card-item {
+  width: 300px;
+  height: 300px;
+}
